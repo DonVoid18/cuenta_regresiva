@@ -1,9 +1,9 @@
 simplyCountdown('#cuenta', {
-	year: 2025, // required
-	month: 2, // required
-	day: 19, // required
-	hours: 7, // Default is 0 [0-23] integer
-	minutes: 31, // Default is 0 [0-59] integer
+	year: 2022, // required
+	month: 1, // required
+	day: 20, // required
+	hours: 0, // Default is 0 [0-23] integer
+	minutes: 0, // Default is 0 [0-59] integer
 	seconds: 0, // Default is 0 [0-59] integer
 	words: { //words displayed into the countdown
 		days: 'Día',
@@ -18,6 +18,7 @@ simplyCountdown('#cuenta', {
 	// in case of inline set to false
 	enableUtc: true, //Use UTC as default
 	onEnd: function() {
+		// que pasa cuando el tiempo termina
 		document.getElementById('portada').classList.add('oculta');
 		return; 
 	}, //Callback on countdown end, put your own function here
